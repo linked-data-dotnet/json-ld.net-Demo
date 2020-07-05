@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>JsonLD.Demo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\doc.json" />
+    <EmbeddedResource Include="Resources\context.json" />
+    <EmbeddedResource Include="Resources\frame.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="json-ld.net" Version="1.0.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>
